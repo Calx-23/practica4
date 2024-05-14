@@ -1,0 +1,20 @@
+CREATE TABLE posts (
+id int(11) auto_increment primary key, 
+fecha date, 
+titulo varchar(100), 
+contenido text);
+
+INSERT INTO posts (fecha,titulo,contenido) VALUES('2024-05-02','Que depara la próxima generación de procesadores?',
+'Analizamos las tendencias emergentes en el diseño de procesadores y lo que podemos esperar de la próxima
+generación de chips. Desde arquitecturas innovadoras hasta avances en la fabricación, exploramos cómo estas
+nuevas tecnologías están impulsando el rendimiento y la eficiencia en una amplia gama de dispositivos, desde
+teléfonos inteligentes hasta centros de datos. También discutimos cómo estos avances podrían afectar el futuro
+de la informática y la tecnología en general.');
+
+INSERT INTO posts (fecha,titulo,contenido) VALUES('2024-05-06','Explorando los Lenguajes de Programación del Futuro',
+'Exploramos los lenguajes que podrían dominar el panorama tecnológico en los próximos años. Desde los
+clásicos como Python y Java hasta los recién llegados como Rust y Swift, examinamos las fortalezas y debilidades
+de cada uno, así como su potencial para enfrentar los desafíos emergentes en el mundo del desarrollo de
+software.');
+
+SELECT * FROM posts;
